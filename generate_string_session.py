@@ -13,3 +13,5 @@ with TelegramClient(StringSession(), API_KEY, API_HASH) as client:
     print("This is your string session, be careful with it and don't share it with anyone else!")
     print("")
     print(client.session.save())
+    print("")
+    print("Enjoy your userbot!")

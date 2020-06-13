@@ -1,7 +1,7 @@
 {
-    "name": "Paperplane userbot project",
-    "description": "A modular Telegram userbot running on Python3, which can be coupled up with Mongo DB and a Redis backend.",
-    "logo": "https://camo.githubusercontent.com/c9497896ad221daba6cb84f897e7ec00ba46f430/68747470733a2f2f74656c656772612e70682f66696c652f3733636634633632623263363466393831393631652e706e67",
+    "name": "Telegram UserBot",
+    "description": "A modular Telegram userbot running on Python3, which is based on PaperPlane Project.",
+    "logo": "#",
     "keywords": [
       "telegram",
       "userbot",
@@ -9,9 +9,9 @@
       "modular",
       "productivity"
     ],
-    "repository": "https://github.com/RaphielGang/Telegram-Paperplane",
-    "website": "https://github.com/RaphielGang/Telegram-Paperplane",
-    "success_url": "#TODO",
+    "repository": "https://github.com/CyanoBot332/TelegramBot",
+    "website": "https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02",
+    "success_url": "#",
     "stack": "container",
     "env": {
         "API_KEY": {
@@ -23,20 +23,18 @@
             "required": true
         },
         "STRING_SESSION": {
-            "description": "Generate using generate_string_session.py.",
+            "description": "Generate using following: python3 generate_string_session.py",
             "required": true
         },
         "HEROKU_APIKEY": {
-            "description": "Get from 'https://dashboard.heroku.com/account'. It's neede for userbot updates.",
-            "required": false
+            "description": "Get from 'https://dashboard.heroku.com/account'. It's needed for userbot updates.",
+            "value": "",
+            "required": true
         },
         "HEROKU_APPNAME": {
             "description": "Add the Heroku app name here. It's needed for userbot updates.",
-            "required": false
-        },
-        "MONGO_DB_URI": {
-            "description": "Your MongoDB Atlas URL.",
-            "required": true 
+            "value": "",
+            "required": true
         },
         "SCREENSHOT_ACCESS_LAYER_KEY": {
             "description": "Screenshot Layer API Key for .screenshot command. Get from https://screenshotlayer.com/. Please refer to README for getting the key.",
@@ -51,6 +49,15 @@
             "value": "False",
             "required": false 
         },
+	"COUNTRY": {
+	    "description": "Set your Country to be used in the .time and .date commands.",
+      	    "required": false
+    	}, 
+    	"TZ_NUMBER": {
+      	   "description": "Change this value in case your country has multiple Time Zones.",
+      	   "value": "1",
+      	   "required": false
+    	},       
         "BOTLOG_CHATID": {
             "description": "Chat ID for Botlog. Get it from group management bots such as Marie or her forks.",
             "value": "0",
